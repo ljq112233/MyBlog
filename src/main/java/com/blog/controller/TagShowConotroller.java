@@ -38,7 +38,7 @@ public class TagShowConotroller {
     private BlogService blogService;
 
     @GetMapping("/tags/{id}")
-    public String Tags(@PathVariable Long id, @RequestParam(required = false,defaultValue = "1",value = "pagenum")int pagenum,
+    public String Tags(@PathVariable Long id, @RequestParam(required = false,defaultValue = "1",value = "pageNum")int pagenum,
                        Model model){
         PageHelper.startPage(pagenum,100);
         List<Tag> tags = tagService.getBlogTag();

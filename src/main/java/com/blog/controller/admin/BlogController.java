@@ -53,7 +53,7 @@ public class BlogController {
      * @Date: 2021/7/29
      */
     @GetMapping("/blogs")
-    public String blogs(@RequestParam(required = false,defaultValue = "1",value = "pagenum")int pagenum,Model model){
+    public String blogs(@RequestParam(required = false,defaultValue = "1",value = "pageNum")int pagenum,Model model){
         PageHelper.startPage(pagenum,5);
         List<Blog> allBlog = blogService.getAllBlog();
         PageInfo pageInfo = new PageInfo(allBlog);
@@ -70,7 +70,7 @@ public class BlogController {
      * @Date: 2021/7/29
      */
     @PostMapping("/blogs/search")
-    public String search(@RequestParam String query,@RequestParam(required = false,defaultValue = "1",value = "pagenum")int pagenum,Model model){
+    public String search(@RequestParam String query,@RequestParam(required = false,defaultValue = "1",value = "pageNum")int pagenum,Model model){
         PageHelper.startPage(pagenum,5);
         List<Blog> blogs = blogService.getSearchBlog(query);
         PageInfo pageInfo = new PageInfo(blogs);

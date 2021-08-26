@@ -38,7 +38,7 @@ public class TypeShowController {
 
     @GetMapping("/types/{id}")
     public String types(@PathVariable Long id,
-                        @RequestParam(required = false,defaultValue = "1",value = "pagenum")int pagenum,
+                        @RequestParam(required = false,defaultValue = "1",value = "pageNum")int pagenum,
                         Model model){
         PageHelper.startPage(pagenum,100);
         List<Type> types = typeService.getBlogType();

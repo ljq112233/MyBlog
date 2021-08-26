@@ -22,7 +22,7 @@
 
 功能：**前端展示 + 后台管理**，**添加了萌萌的看板娘**
 
-博客地址：**http://lujianqiang.top:29000/**
+博客地址：**http://lujianqiang.top/**
 
 **技术组合：**
 
@@ -34,7 +34,7 @@
 
 *  IDEA
 *  Maven 3.6.2
-*  JDK 12
+*  JDK 11
 *  springboot 2.2.5
 
 
